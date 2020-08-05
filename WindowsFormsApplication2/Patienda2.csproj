@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62F7D5C7-1859-4FAB-9750-33116B093375}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tienda2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.2375.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.PostgreSql, Version=7.17.1583.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.PostgreSql.Vs, Version=7.3.125.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Devart.Data.PostgreSql.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\..\libros\Visual Studio 2012\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contraseña.Designer.cs">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnectionData.cs" />
+    <Compile Include="Entradita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entradita.Designer.cs">
+      <DependentUpon>Entradita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVer.Designer.cs">
+      <DependentUpon>FormVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventarioForm.Designer.cs">
+      <DependentUpon>InventarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="ModificacionCajaChica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificacionCajaChica.Designer.cs">
+      <DependentUpon>ModificacionCajaChica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientosRealizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientosRealizados.Designer.cs">
+      <DependentUpon>MovimientosRealizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoIngreso.Designer.cs">
+      <DependentUpon>NuevoIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAgregar.Designer.cs">
+      <DependentUpon>ModificarAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Contraseña.resx">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entradita.resx">
+      <DependentUpon>Entradita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVer.resx">
+      <DependentUpon>FormVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioForm.resx">
+      <DependentUpon>InventarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificacionCajaChica.resx">
+      <DependentUpon>ModificacionCajaChica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientosRealizados.resx">
+      <DependentUpon>MovimientosRealizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoIngreso.resx">
+      <DependentUpon>NuevoIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAgregar.resx">
+      <DependentUpon>ModificarAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXP_dll_03_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InkWatson_exe_02_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-good-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres_dll_207_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money-Calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DxpTaskSync_dll_03_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyring_dll_08_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabview_dll_01_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres_dll_007_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timedate_cpl_01_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-shopping-cart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
